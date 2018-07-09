@@ -6,7 +6,7 @@ using namespace std;
 const int SIZE = 80;
 
 class String{
-    char str[];
+    char str[SIZE];
 
     public:
         String() {
@@ -16,7 +16,7 @@ class String{
             strcpy(str, s);
         }
         void getString() {
-            cout<<"Insert string less than 80 symbols: ";
+            cout<<"Insert string not longer than 80 symbols: ";
             cin.getline(str, sizeof(str));
         }
  
